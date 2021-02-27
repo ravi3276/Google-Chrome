@@ -33,7 +33,7 @@ function HomePage() {
         />
 
         <div className="homepage__search">
-        <Search />
+        <Search hideButtons/>
         </div>
         </div>
         </div>

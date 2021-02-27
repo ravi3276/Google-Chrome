@@ -6,16 +6,19 @@ import {
   Route,
   
 } from "react-router-dom";
-
+import {useStateValue} from "./StateProvider"
+import SearchPage from './SearchPage';
 function App() {
+
+  // const [{term}]=useStateValue();
   return (
     <div className="app">
 
     <Router>
         <Switch>
 
-        <Route path="/about">
-        <h1>about page</h1>
+        <Route path="/search">
+        <SearchPage />
         </Route>
 
         <Route path="/">
